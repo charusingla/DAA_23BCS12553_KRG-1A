@@ -1,0 +1,16 @@
+class Solution {
+  public:
+    vector<vector<int>> countFreq(vector<int>& arr) {
+      
+        vector<vector<int>> res;
+        unordered_map<int, int> freq;
+        for (int num : arr) {
+            freq[num]++;
+        }
+        
+        for (auto &[ele,count] : freq) {
+            res.push_back({ele, count});
+        }
+        return res;
+    }
+};
