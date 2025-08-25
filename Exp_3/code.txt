@@ -11,6 +11,7 @@ class Solution {
         for (auto &[ele,count] : freq) {
             res.push_back({ele, count});
         }
+        
         return res;
     }
 };
