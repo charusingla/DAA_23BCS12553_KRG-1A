@@ -48,6 +48,6 @@ int main() {
     auto res = verticalTraversal(r);
     for (auto &col : res) {
         for (int x : col) cout << x << " ";
-        cout << "\n";
-    }
+        cout <<"\n";
+}
 }
